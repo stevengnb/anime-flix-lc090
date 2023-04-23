@@ -1,0 +1,79 @@
+@font-face {
+    font-family: font1;
+    src: url('../asset/font1.TTF');
+}
+
+@font-face {
+    font-family: font2;
+    src: url('../asset/font2.ttf');
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-width: 100vw;
+    min-height: 80vh;
+}
+
+.anime-all {
+    margin: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.every-anime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2px;
+}
+
+.search {
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    padding: 5px; 
+    border: 1.75px solid black;
+    font-family: font1;
+    margin-bottom: 0;
+}
+
+.search::placeholder {
+    text-align: center;
+    letter-spacing: 7.5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        min-width: 80vw;
+        min-height: 80vh;
+    }
+
+    .anime-all {
+        margin: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .every-anime {
+        margin-bottom: 2rem;
+    }
+
+    .search {
+        padding: 0;
+        margin: 0;
+    }
+}
