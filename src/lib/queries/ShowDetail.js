@@ -13,6 +13,7 @@ export const SHOW_DETAIL = gql`
                     english
                     romaji
                 }
+                description
                 popularity
                 episodes
                 averageScore

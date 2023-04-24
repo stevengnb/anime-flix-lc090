@@ -8,6 +8,9 @@ function AnimeDetailCard({media}) {
             <div className="anime-title adt-title">
                 {media.title.english ? media.title.english : media.title.romaji}
             </div>
+            <div className="anime-description">
+                <div dangerouslySetInnerHTML={{ __html: media.description }}></div>
+            </div>
             <div className="adt-cont">
                 <div className="adt-left">
                     <div className="anime-score adt">Score: {media.averageScore}</div>
